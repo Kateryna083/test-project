@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function initializeSwiper() {
     new Swiper('.swiper-container', {
-      slidesPerView: 3,
+      slidesPerView: 4,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',

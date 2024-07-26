@@ -6,6 +6,19 @@
     <title>Reviews</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <link
       rel="stylesheet"
@@ -13,15 +26,17 @@
     />
   </head>
   <body>
-    <h2 class="reviews-title">Reviews</h2>
-    <div class="swiper-container">
-      <ul class="swiper-wrapper" id="reviews-container">
-        <!-- Reviews will be injected here -->
-      </ul>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+    <div class="reviews-div">
+      <h2 class="reviews-title">Reviews</h2>
+      <div class="swiper-container">
+        <ul class="swiper-wrapper" id="reviews-container">
+          <!-- Reviews will be injected here -->
+        </ul>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div id="error-message" class="error-message"></div>
     </div>
-    <div id="error-message" class="error-message"></div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="module" src="./reviews.js"></script>
   </body>
