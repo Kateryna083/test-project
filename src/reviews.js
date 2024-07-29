@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function initializeSwiper() {
     new Swiper('.swiper-container', {
-      slidesPerView: 4,
+      slidesPerView: 1,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -40,6 +40,16 @@ document.addEventListener('DOMContentLoaded', function () {
       keyboard: {
         enabled: true,
         onlyInViewport: false,
+      },
+      breakpoints: {
+        // 768px to 1439px
+        768: {
+          slidesPerView: 2,
+        },
+        // 1440px and above
+        1440: {
+          slidesPerView: 4,
+        },
       },
       on: {
         slideChangeTransitionEnd: function () {

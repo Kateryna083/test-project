@@ -1,8 +1,38 @@
+body {
+  margin: 0;
+  font-family: 'Inter Tight', sans-serif;
+}
 ul {
   padding: 0;
   margin: 0;
 }
+li {
+  list-style: none;
+}
 
+.reviews-div {
+  background-color: #1c1d20;
+  padding: 64px 16px;
+  max-width: 100%; /* Додаємо максимальну ширину */
+  box-sizing: border-box; /* Включаємо падінг і бордер в ширину елемента */
+}
+.reviews-title {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.4);
+  padding-bottom: 32px;
+}
+.swiper-container {
+  /* width: 344px;
+  height: 386px;
+  margin: 32px 24px; */
+  width: 100%; /* Займає 100% ширини батьківського елемента */
+  height: 100%;
+  box-sizing: border-box; /* Включаємо падінг і бордер в ширину елемента */
+}
 .swiper-button-disabled {
   opacity: 0.5;
   pointer-events: none;
@@ -20,10 +50,17 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  background-color: #fff;
+  background-color: #242527;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 20px;
+  padding: 32px 24px;
+  width: 343px;
+  height: 302px;
+  margin: 0 8px; /* Відстань між слайдами */
+  box-sizing: border-box; /* Включаємо падінг і бордер в ширину елемента */
 }
 .review-avatar {
   width: 50px;
@@ -32,15 +69,21 @@ ul {
   margin-bottom: 10px;
 }
 .review-author {
-  /* font-family: var(--font-family); */
+  font-family: 'Inter Tight', sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 150%;
   letter-spacing: -0.02em;
-  /* color: var(--main-text); */
+  color: #fafafa;
+  padding-bottom: 8px;
 }
 .review-text {
-  /* text-align: center; */
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
 }
 
 /* _______________________________ */
@@ -61,4 +104,23 @@ ul {
     --button-text: #ed3b44;
     --main-text: #fafafa;
   } */
+}
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    min-width: 1440px;
+    padding: 0 100px;
+  }
 }
